@@ -1,4 +1,16 @@
-Tech Stack
+# Next-Starter project
+
+## Install it and run:
+
+```bash
+npm install
+npm run dev
+# or
+yarn
+yarn dev
+```
+
+## Tech Stack
 
 - next
 - react
@@ -7,7 +19,7 @@ Tech Stack
 - styled-components
 - swr
 
-TODO:
+## TODO:
 
 - next-i18next https://github.com/isaachinman/next-i18next
 - next-runtime-dotenv https://github.com/tusbar/next-runtime-dotenv
