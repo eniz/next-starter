@@ -7,8 +7,7 @@ import useGithubProfile from "../hooks/useGithubProfile";
 
 const USERNAME = "eniz";
 
-function Index(props) {
-  const initialData = props.data;
+function Index({ initialData }) {
   const { data, error } = useGithubProfile(USERNAME, { initialData });
   if (!data) return "Loading...";
   if (error) return "Something went wrong";
@@ -22,8 +21,8 @@ function Index(props) {
 }
 
 Index.getInitialProps = async () => {
-  const data = await fetcher(`https://api.github.com/users/${USERNAME}`);
-  return { data };
+  const initialData = await fetcher(`https://api.github.com/users/${USERNAME}`);
+  return { initialData };
 };
 
 export default Index;
